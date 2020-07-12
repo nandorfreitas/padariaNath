@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Natália</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+
+    <h3 style="margin-left: 50px;">Seja Bem Vindo a Padaria da Nathy!</h1>
+    <h4 style="margin-left: 100px;">Selecione o produto desejado</h2>
+    <div class="row">
+        <div class="col-5">
+            <div class="btn-group-vertical produtos">
+                <button type="button" onclick="perguntas(this.value)" value="Pão Francês" class="btn btn-primary btn-lg produto">Pão Francês</button>
+                <button type="button" onclick="perguntas(this.value)" value="Pão Doce" class="btn btn-dark btn-lg produto">Pão Doce</button>
+                <button type="button" onclick="perguntas(this.value)" value="Leite" class="btn btn-warning btn-lg produto">Leite</button>
+                <button type="button" onclick="perguntas(this.value)" value="Salgado" class="btn btn-success btn-lg produto">Salgado</button>
+                <button type="button" onclick="perguntas(this.value)" value="Torta de Chocolate" class="btn btn-info btn-lg produto">Torta de Chocolate</button>
+            </div>
+        </div>
+      <div class="col-3">
+        <div class="btn-group-vertical precos">
+            <button type="button" class="btn btn-outline-primary btn-lg produto">R$ 0,25</button>
+            <button type="button" class="btn btn-outline-dark btn-lg produto">R$ 0,50</button>
+            <button type="button" class="btn btn-outline-warning btn-lg produto">R$ 3,50</button>
+            <button type="button" class="btn btn-outline-success btn-lg produto">R$ 4,00</button>
+            <button type="button" class="btn btn-outline-info btn-lg produto">R$ 40,00</button>
+        </div>
+      </div>
+        
+    </div>
+</div>
+
+
+
+    <script>
+       function perguntas(produto) {
+           let quantidade = parseInt(prompt(`Digite a quantidade de ${produto} desejado`))
+       }
+
+    </script>
+
+
+    <style>
+        .produto{
+            margin-bottom: 10px;
+        }
+        .precos{
+            margin-left: 70px;
+        }
+        .produtos{
+            margin-left: 100px;
+        }
+        .container{
+            width: 600px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+</body>
+</html>
+
+
